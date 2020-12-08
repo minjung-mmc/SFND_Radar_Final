@@ -147,8 +147,8 @@ range_axis = linspace(-200,200,Nr/2)*((Nr/2)/400);
 figure,surf(doppler_axis,range_axis,RDM);
 
 ```
-![Range from First FFT](/Figure1.png)
-![2DFFT](/Figure2.png)
+![Range from First FFT](/Figure1.jpg)
+![2DFFT](/Figure2.jpg)
 
 ## FP.4 CFAR Detection
 Towards the end, perform the CFAR processing on the output of 2nd FFT to display the target.
@@ -237,6 +237,6 @@ end
 
 RDM(RDM ~= 1 & RDM ~= 0) = 0;
 ```
-![2DFFT](/Figure2.png)
-![2DCFAR](/Figure3.png)
+![2DFFT](/Figure2.jpg)
+![2DCFAR](/Figure3.jpg)
 Comparing those two results, we can see that noise is eliminated successfully.
