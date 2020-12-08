@@ -4,7 +4,7 @@
 ## FP1. FMCW Configuration
 Configure the FMCW waveform based on the system requirements. 
 ### Radar System Requirements
-![Radar System Requirements](/Radar_Sysyem_Requirements.png)
+![Radar System Requirements](/image/Radar_Sysyem_Requirements.png)
 
 ```
 %% FMCW Waveform Generation
@@ -82,7 +82,7 @@ end
 
 ## FP.3 Range/Doppler FFT
 Perform Range FFT on the received signal to determine the Range. Then generate a Range Doppler Map.  
-![Fast Fourier Transform](/FFT2.png)
+![Fast Fourier Transform](/image/FFT2.png)
 
 **Fast Fourier Transform**
 ```
@@ -148,11 +148,11 @@ range_axis = linspace(-200,200,Nr/2)*((Nr/2)/400);
 figure,surf(doppler_axis,range_axis,RDM);
 
 ```
-![Range from First FFT](/FIgure1.png)
+![Range from First FFT](/image/FIgure1.png)
 
 **Range from First FFT**
 
-![2DFFT](/Figure2.jpg)
+![2DFFT](/image/Figure2.jpg)
 
 **2DFFT**
 
@@ -243,11 +243,11 @@ end
 
 RDM(RDM ~= 1 & RDM ~= 0) = 0;
 ```
-![2DFFT](/Figure2.jpg)
+![2DFFT](/image/Figure2.jpg)
 
 **2DFFT**
 
-![2DCFAR](/Figure3.jpg)
+![2DCFAR](/image/Figure3.jpg)
 
 **2DCFAR**
 
