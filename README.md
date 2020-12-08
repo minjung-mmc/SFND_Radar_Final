@@ -78,7 +78,6 @@ for i=1:length(t)
     Mix(i) = Tx(i).*Rx(i);
     
 end
-
 ```
 
 ## FP.3 Range/Doppler FFT
