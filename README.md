@@ -5,6 +5,7 @@
 Configure the FMCW waveform based on the system requirements. 
 ### Radar System Requirements
 ![Radar System Requirements](/Radar_Sysyem_Requirements.png)
+
 **Radar System Requirements**
 ```
 %% FMCW Waveform Generation
@@ -84,6 +85,7 @@ end
 ## FP.3 Range/Doppler FFT
 Perform Range FFT on the received signal to determine the Range. Then generate a Range Doppler Map.  
 ![Fast Fourier Transform](/FFT2.png)
+
 **Fast Fourier Transform**
 ```
 %% RANGE MEASUREMENT
@@ -149,8 +151,10 @@ figure,surf(doppler_axis,range_axis,RDM);
 
 ```
 ![Range from First FFT](/FIgure1.png)
+
 **Range from First FFT**
 ![2DFFT](/Figure2.jpg)
+
 **2DFFT**
 
 ## FP.4 CFAR Detection
@@ -241,8 +245,10 @@ end
 RDM(RDM ~= 1 & RDM ~= 0) = 0;
 ```
 ![2DFFT](/Figure2.jpg)
+
 **2DFFT**
 ![2DCFAR](/Figure3.jpg)
+
 **2DCFAR**
 
 Comparing those two results, we can see that noise is eliminated successfully.
