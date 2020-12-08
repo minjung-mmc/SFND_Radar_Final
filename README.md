@@ -82,7 +82,6 @@ end
 
 ## FP.3 Range/Doppler FFT
 Perform Range FFT on the received signal to determine the Range. Then generate a Range Doppler Map.  
-![Time Domain to Frequency Domain](/FFT.png)
 ![Fast Fourier Transform](/FFT2.png)
 ```
 %% RANGE MEASUREMENT
@@ -147,7 +146,7 @@ range_axis = linspace(-200,200,Nr/2)*((Nr/2)/400);
 figure,surf(doppler_axis,range_axis,RDM);
 
 ```
-![Range from First FFT](/Figure1.jpg) ![2DFFT](/Figure2.jpg)
+![Range from First FFT](/Figure1.png) ![2DFFT](/Figure2.jpg)
 
 ## FP.4 CFAR Detection
 Towards the end, perform the CFAR processing on the output of 2nd FFT to display the target.
