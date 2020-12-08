@@ -6,7 +6,6 @@ Configure the FMCW waveform based on the system requirements.
 ### Radar System Requirements
 ![Radar System Requirements](/Radar_Sysyem_Requirements.png)
 
-**Radar System Requirements**
 ```
 %% FMCW Waveform Generation
 
@@ -153,6 +152,7 @@ figure,surf(doppler_axis,range_axis,RDM);
 ![Range from First FFT](/FIgure1.png)
 
 **Range from First FFT**
+
 ![2DFFT](/Figure2.jpg)
 
 **2DFFT**
@@ -247,6 +247,7 @@ RDM(RDM ~= 1 & RDM ~= 0) = 0;
 ![2DFFT](/Figure2.jpg)
 
 **2DFFT**
+
 ![2DCFAR](/Figure3.jpg)
 
 **2DCFAR**
